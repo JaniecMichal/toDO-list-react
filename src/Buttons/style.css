@@ -1,0 +1,70 @@
+.buttonContainer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.button {
+    flex-basis: 250px;
+    margin-left: 10px;
+    background-color: teal;
+    padding: 10px;
+    border: 2px solid #555;
+    color: white;
+    transition: background-color 1s;
+}
+
+.button:hover {
+    background-color: hsl(120, 100%, 25%);
+}
+
+.button:active {
+    background-color: hsl(120, 100%, 35%);
+}
+
+.button--allRemove {
+    flex-basis: auto;
+    background-color: darkred;
+    flex-basis: auto;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.button--allRemove:hover {
+    background-color: hsl(0, 100%, 38%);
+    border-color: #222;
+}
+
+.button--allRemove:active {
+    background-color: hsl(0, 100%, 45%);
+}
+
+.button:disabled {
+    background-color: grey;
+    border-color: grey;
+}
+
+@media (max-width:790px) {
+    .buttonContainer {
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .button {
+        flex-basis: auto;
+        margin-top: 10px;
+        background-color: teal;
+        background-image: none;
+        padding: 10px;
+    }
+    .button--allRemove {
+        flex-basis: auto;
+        background-color: darkred;
+        background-image: none;
+        flex-basis: auto;
+        padding: 10px;
+        margin-top: 10px;
+    }
+}

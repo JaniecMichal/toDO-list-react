@@ -1,0 +1,167 @@
+.taskList {
+    padding-left: 0px;
+}
+
+.taskList__listItem {
+    list-style-type: none;
+    border-bottom: 2px solid #555;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.taskList__listItem--hidden {
+    display: none;
+}
+
+.taskList__task {
+    flex-basis: 78%;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.taskList__task--done {
+    text-decoration: line-through;
+}
+
+.taskList__button {
+    min-height: 30px;
+    flex-basis: 10%;
+    background-color: hsl(120, 100%, 25%);
+    border: 2px solid #555;
+    color: white;
+    transition: background-color 1s;
+}
+
+.taskList__button:hover {
+    background-color: hsl(120, 100%, 35%);
+    border-color: #222;
+    cursor: pointer;
+    background-image: url(../images/checked--small.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.taskList__button--done {
+    background-image: url(../images/checked--small.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.taskList__button:active {
+    background-color: hsl(120, 100%, 50%);
+}
+
+.taskList__button--remove {
+    background-color: darkred;
+    background-image: url(../images/basket.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.taskList__button--remove:hover {
+    background-color: hsl(0, 100%, 38%);
+    border-color: #222;
+    background-image: url(../images/basket.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.taskList__button--remove:active {
+    background-color: hsl(0, 100%, 45%);
+}
+
+.buttonContainer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.taskList__button--additionalAction {
+    flex-basis: 250px;
+    margin-left: 10px;
+    background-color: teal;
+    background-image: none;
+    padding: 10px;
+}
+
+.taskList__button--additionalAction:hover {
+    background-color: hsl(120, 100%, 25%);
+    background-image: none;
+}
+
+.taskList__button--additionalAction:active {
+    background-color: hsl(120, 100%, 35%);
+}
+
+.taskList__button--allRemove {
+    flex-basis: auto;
+    background-color: darkred;
+    background-image: none;
+    flex-basis: auto;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.taskList__button--allRemove:hover {
+    background-color: hsl(0, 100%, 38%);
+    border-color: #222;
+    background-image: none;
+}
+
+.taskList__button--allRemove:active {
+    background-color: hsl(0, 100%, 45%);
+}
+
+.taskList__button:disabled {
+    background-color: grey;
+    background-image: none;
+    border-color: grey;
+}
+
+.taskList__button--disabled:active {
+    outline: none;
+}
+
+@media (max-width:790px) {
+    .taskList__listItem {
+        padding: 20px 0px;
+        border-bottom: 2px solid #555;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .taskList__task {
+        text-align: center;
+    }
+    .taskList__button {
+        min-width: 20%;
+    }
+    .taskList__button--remove {
+        min-width: 20%;
+    }
+    .buttonContainer {
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .taskList__button--additionalAction {
+        flex-basis: auto;
+        margin-top: 10px;
+        background-color: teal;
+        background-image: none;
+        padding: 10px;
+    }
+    .taskList__button--allRemove {
+        flex-basis: auto;
+        background-color: darkred;
+        background-image: none;
+        flex-basis: auto;
+        padding: 10px;
+        margin-top: 10px;
+    }
+}

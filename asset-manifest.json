@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/toDO-list-react/static/css/main.7723445a.chunk.css",
+    "main.js": "/toDO-list-react/static/js/main.55c35e21.chunk.js",
+    "main.js.map": "/toDO-list-react/static/js/main.55c35e21.chunk.js.map",
+    "runtime-main.js": "/toDO-list-react/static/js/runtime-main.aa0dc49e.js",
+    "runtime-main.js.map": "/toDO-list-react/static/js/runtime-main.aa0dc49e.js.map",
+    "static/js/2.f58a2cb7.chunk.js": "/toDO-list-react/static/js/2.f58a2cb7.chunk.js",
+    "static/js/2.f58a2cb7.chunk.js.map": "/toDO-list-react/static/js/2.f58a2cb7.chunk.js.map",
+    "index.html": "/toDO-list-react/index.html",
+    "precache-manifest.dcc43eb93939affa01f4c0882880bc43.js": "/toDO-list-react/precache-manifest.dcc43eb93939affa01f4c0882880bc43.js",
+    "service-worker.js": "/toDO-list-react/service-worker.js",
+    "static/css/main.7723445a.chunk.css.map": "/toDO-list-react/static/css/main.7723445a.chunk.css.map",
+    "static/js/2.f58a2cb7.chunk.js.LICENSE.txt": "/toDO-list-react/static/js/2.f58a2cb7.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/toDO-list-react/static/media/checkerboard-cross.9f2b8c11.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.aa0dc49e.js",
+    "static/js/2.f58a2cb7.chunk.js",
+    "static/css/main.7723445a.chunk.css",
+    "static/js/main.55c35e21.chunk.js"
+  ]
+}

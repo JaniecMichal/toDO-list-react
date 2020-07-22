@@ -10,7 +10,8 @@ import Footer from "./Footer";
 
 const tasks = [
   { id: 1, content: "przejść na reacta", done: false },
-  { id: 2, content: "iść spać", done: true },
+  { id: 2, content: "iść na spacer", done: false },
+  { id: 3, content: "iść spać", done: true },
 ];
 
 const hideDoneTask = false;

@@ -6,7 +6,7 @@
 }
 
 .button {
-    flex-basis: 250px;
+    flex-basis: auto;
     margin-left: 10px;
     background-color: teal;
     padding: 10px;
@@ -21,6 +21,14 @@
 
 .button:active {
     background-color: hsl(120, 100%, 35%);
+}
+
+.button--hideDone:hover {
+    background-color: hsl(0, 0%, 51%);
+}
+
+.button--hideDone:active {
+    background-color: hsl(0, 0%, 61%);
 }
 
 .button--allRemove {

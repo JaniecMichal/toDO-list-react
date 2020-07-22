@@ -5,7 +5,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 This is my first web app made during YouCode frontend course.  This app it is simply ToDO list.
 
-Demo --> [ToDO List by {Imperator}](https://janiecmichal.github.io/Simply-ToDo-List/)
+Demo --> [ToDO List by {Imperator}](https://janiecmichal.github.io/toDO-list-react/)
 
 ## Technologies used:
 

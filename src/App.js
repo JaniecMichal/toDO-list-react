@@ -44,6 +44,21 @@ function App() {
       })))
   };
 
+  const addNewTasks = (content) => {
+    if (content !== "") {
+      setTasks(tasks =>
+        [
+          ...tasks,
+          {
+            content,
+            done: false,
+            id: tasks.length === 0 ? 1 : tasks[tasks.length - 1].id + 1,
+          }
+        ])
+    }
+    return
+  };
+
   const removeAll = () => {
     setTasks(tasks => [])
   };
@@ -52,7 +67,9 @@ function App() {
     <Container>
       <Header mainTitle="React ToDO list by {Imperator}" />
 
-      <Section title="Dodaj nowe zadanie" body={<Form />} />
+      <Section
+        title="Dodaj nowe zadanie"
+        body={<Form addNewTask={addNewTasks} />} />
 
       <Section
         title="Lista zadań do zrobienia"

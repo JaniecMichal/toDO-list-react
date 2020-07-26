@@ -1,7 +1,7 @@
 import React from 'react';
 import "./style.css"
 
-const Buttons = ({ tasks, hideDoneTask }) => (
+const Buttons = ({ tasks, hideDone, toggleHideDone }) => (
 
     <div className="buttonContainer">
 
@@ -10,8 +10,8 @@ const Buttons = ({ tasks, hideDoneTask }) => (
                 <button className="button" disabled={tasks.every(({ done }) => done)}>
                     Oznacz wszystkie jako ukończone
                 </button>
-                <button className="button button--hideDone">
-                    {hideDoneTask ? "Pokaż wykonane zadania" : "Ukryj wykonane zadania"}
+                <button className="button button--hideDone" onClick={toggleHideDone}>
+                    {hideDone ? "Pokaż wykonane zadania" : "Ukryj wykonane zadania"}
                 </button>
                 <button className="button button--allRemove">
                     Usuń wszystkie zadania

@@ -44,6 +44,10 @@ function App() {
       })))
   };
 
+  const removeAll = () => {
+    setTasks(tasks => [])
+  };
+
   return (
     <Container>
       <Header mainTitle="React ToDO list by {Imperator}" />
@@ -57,7 +61,10 @@ function App() {
           <Buttons
             tasks={tasks}
             toggleHideDone={toggleHideDone}
-            setAllDone={setAllDone} />}
+            setAllDone={setAllDone}
+            removeAll={removeAll}
+          />}
+
         body=
         {
           <TaskList

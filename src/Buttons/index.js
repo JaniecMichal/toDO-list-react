@@ -1,7 +1,7 @@
 import React from 'react';
 import "./style.css"
 
-const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone }) => (
+const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone, removeAll }) => (
 
     <div className="buttonContainer">
 
@@ -20,7 +20,10 @@ const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone }) => (
                 >
                     {hideDone ? "Pokaż wykonane zadania" : "Ukryj wykonane zadania"}
                 </button>
-                <button className="button button--allRemove">
+                <button
+                    className="button button--allRemove"
+                    onClick={removeAll}
+                >
                     Usuń wszystkie zadania
                 </button>
             </React.Fragment>

@@ -36,6 +36,14 @@ function App() {
     }))
   };
 
+  const setAllDone = () => {
+    setTasks(tasks => tasks.map(task => (
+      {
+        ...task,
+        done: true,
+      })))
+  };
+
   return (
     <Container>
       <Header mainTitle="React ToDO list by {Imperator}" />
@@ -44,15 +52,20 @@ function App() {
 
       <Section
         title="Lista zadań do zrobienia"
-        extraContent={<Buttons tasks={tasks} toggleHideDone={toggleHideDone} />}
+        extraContent=
+        {
+          <Buttons
+            tasks={tasks}
+            toggleHideDone={toggleHideDone}
+            setAllDone={setAllDone} />}
         body=
         {
-        <TaskList 
-          tasks={tasks} 
-          hideDone={hideDone} 
-          removeTask={removeTask} 
-          toggleDone={toggleDone}
-          
+          <TaskList
+            tasks={tasks}
+            hideDone={hideDone}
+            removeTask={removeTask}
+            toggleDone={toggleDone}
+
           />} />
 
       <Footer />

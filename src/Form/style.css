@@ -24,7 +24,7 @@
     color: white;
     padding: 10px;
     border: 2px solid #555;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .form__addTaskButton:hover {

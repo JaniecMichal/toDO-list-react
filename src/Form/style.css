@@ -39,17 +39,17 @@
     background-color: hsl(180, 100%, 43%);
 }
 
-@media (max-width:480px) {
-    .taskAddingPanel_form {
+@media (max-width:790px) {
+    .form {
         display: flex;
         flex-flow: column;
         justify-content: center;
         align-items: center;
     }
-    .taskAddingPanel_input {
+    .form__input {
         width: 100%;
     }
-    .taskAddingPanel__addTaskButton {
+    .form__addTaskButton {
         width: 100%;
         margin-top: 10px;
     }

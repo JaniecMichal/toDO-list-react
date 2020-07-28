@@ -138,10 +138,10 @@
         text-align: center;
     }
     .taskList__button {
-        min-width: 20%;
+       min-width:30%;
     }
     .taskList__button--remove {
-        min-width: 20%;
+        min-width:30%;
     }
     .buttonContainer {
         display: flex;

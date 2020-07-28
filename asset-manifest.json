@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/toDO-list-react/static/css/main.c4f4e7b0.chunk.css",
+    "main.css": "/toDO-list-react/static/css/main.2c803da6.chunk.css",
     "main.js": "/toDO-list-react/static/js/main.0abba1fc.chunk.js",
     "main.js.map": "/toDO-list-react/static/js/main.0abba1fc.chunk.js.map",
     "runtime-main.js": "/toDO-list-react/static/js/runtime-main.aa0dc49e.js",
@@ -8,16 +8,16 @@
     "static/js/2.49298c4f.chunk.js": "/toDO-list-react/static/js/2.49298c4f.chunk.js",
     "static/js/2.49298c4f.chunk.js.map": "/toDO-list-react/static/js/2.49298c4f.chunk.js.map",
     "index.html": "/toDO-list-react/index.html",
-    "precache-manifest.69cc77798e4699cec190eb717302ca9c.js": "/toDO-list-react/precache-manifest.69cc77798e4699cec190eb717302ca9c.js",
+    "precache-manifest.b0e77eabd44161f80764c666b5fa8c80.js": "/toDO-list-react/precache-manifest.b0e77eabd44161f80764c666b5fa8c80.js",
     "service-worker.js": "/toDO-list-react/service-worker.js",
-    "static/css/main.c4f4e7b0.chunk.css.map": "/toDO-list-react/static/css/main.c4f4e7b0.chunk.css.map",
+    "static/css/main.2c803da6.chunk.css.map": "/toDO-list-react/static/css/main.2c803da6.chunk.css.map",
     "static/js/2.49298c4f.chunk.js.LICENSE.txt": "/toDO-list-react/static/js/2.49298c4f.chunk.js.LICENSE.txt",
     "static/media/index.css": "/toDO-list-react/static/media/checkerboard-cross.9f2b8c11.png"
   },
   "entrypoints": [
     "static/js/runtime-main.aa0dc49e.js",
     "static/js/2.49298c4f.chunk.js",
-    "static/css/main.c4f4e7b0.chunk.css",
+    "static/css/main.2c803da6.chunk.css",
     "static/js/main.0abba1fc.chunk.js"
   ]
 }

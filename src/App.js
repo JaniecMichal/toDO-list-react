@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Form from "./Form";
 import TaskList from "./TaskList";
 import Buttons from "./Buttons";
@@ -9,11 +9,20 @@ import Footer from "./Footer";
 
 
 function App() {
-  const [hideDone, setHideDone] = useState(false);
+  const [hideDone, setHideDone] = useState(
+    localStorage.getItem("hideDone") !== null ? JSON.parse(localStorage.getItem("hideDone")) : (false)
+  );
+  const [tasks, setTasks] = useState(
+    localStorage.getItem("tasks") !== null ? JSON.parse(localStorage.getItem("tasks")) : []
+  );
 
-  const [tasks, setTasks] = useState([
+  useEffect(() => {
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+  }, [tasks]);
 
-  ]);
+  useEffect(() => {
+    localStorage.setItem("hideDone", JSON.stringify(hideDone));
+  }, [hideDone]);
 
   const toggleHideDone = () => {
     setHideDone(hideDone => !hideDone);
@@ -52,8 +61,8 @@ function App() {
             id: tasks.length === 0 ? 1 : tasks[tasks.length - 1].id + 1,
           }
         ])
-    }
-    return
+    };
+    return;
   };
 
   const removeAll = () => {

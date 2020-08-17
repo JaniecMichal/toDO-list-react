@@ -1,22 +1,35 @@
-.form {
+import styled from "styled-components";
+
+export const AddingTaskSection = styled.form`
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-}
 
-.form__input {
+    @media (max-width:790px){
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+`;
+
+export const NewTaskContainer = styled.input`
     padding: 10px;
     flex-basis: 75%;
     flex-grow: 1;
     border: 2px solid #555;
-}
 
-.form__input:focus {
-    outline: 4px solid teal;
-}
+    &:focus{
+        outline: 4px solid teal;
+    }
 
-.form__addTaskButton {
+    @media (max-width:790px){
+        width: 100%;
+    }
+`;
+
+export const AddTaskButton = styled.button`
     margin-left: 5px;
     flex-basis: 20%;
     flex-grow: 1;
@@ -25,32 +38,17 @@
     padding: 10px;
     border: 2px solid #555;
     transition: 0.5s;
-}
 
-.form__addTaskButton:hover {
+    &:hover{
     background-color: hsl(180, 100%, 33%);
     color: black;
     cursor: pointer;
     border-color: #222;
     transform: scale(1.12);
-}
-
-.form__addTaskButton:active {
-    background-color: hsl(180, 100%, 43%);
-}
-
-@media (max-width:790px) {
-    .form {
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
-        align-items: center;
     }
-    .form__input {
-        width: 100%;
-    }
-    .form__addTaskButton {
+
+    @media (max-width:790px){
         width: 100%;
         margin-top: 10px;
     }
-}
+`;

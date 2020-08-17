@@ -1,41 +1,85 @@
 import React from 'react';
-import "./style.css";
+import {
+	FooterWrapper,
+	FooterHeader,
+	SourceName,
+	SourceContainer,
+	SourceLink
+}
+	from "./styled";
+
 
 const Footer = () => (
-    <footer className="footer">
-        <h3 className="footer__footerText"
-        >Wszelkie prawa zastrzeżone.&copy; ToDo List by Imperator. Projekt 2020.
-        </h3>
+	<FooterWrapper>
+		<FooterHeader>
+			Wszelkie prawa zastrzeżone.&copy; ToDo List by Imperator. Projekt 2020.
+                </FooterHeader>
 
-        <h4 className="footer__titleSource">Źródła</h4>
+		<SourceName>Źródła</SourceName>
 
-        <div className="footer__sources">Icons made by
-        <a href="https://www.flaticon.com/authors/freepik" title="Freepik" className="footer__link"
-                target="_blank" rel="noreferrer noopener">Freepik</a>
-        from
-        <a href="https://www.flaticon.com/" title="Flaticon" className="footer__link"
-                target="_blank" rel="noreferrer noopener">www.flaticon.com
-        </a>
-        </div>
+		<SourceContainer>
+			Icons made by {" "}
+			<SourceLink
+				href="https://www.flaticon.com/authors/freepik"
+				title="Freepik"
+				target="_blank"
+				rel="noreferrer noopener"
+			>
+				Freepik {" "}
+			</SourceLink>
+                                from {" "}
+			<SourceLink
+				href="https://www.flaticon.com/"
+				title="Flaticon"
+				target="_blank"
+				rel="noreferrer noopener"
+			>
+				www.flaticon.com
+                         </SourceLink>
+		</SourceContainer>
 
-        <div className="footer__sources">Icons made by
-        <a href="https://freeicons.io/profile/3277" title="Gayrat Muminov" className="footer__link"
-                target="_blank" rel="noreferrer noopener">Gayrat Muminov</a>
-        from
-        <a href="https://freeicons.io/" title="Flaticon" className="footer__link"
-                target="_blank" rel="noreferrer noopener">www.flaticon.com
-        </a>
-        </div>
+		<SourceContainer>
+			Icons made by {" "}
+			<SourceLink
+				href="https://freeicons.io/profile/3277"
+				title="Gayrat Muminov"
+				target="_blank"
+				rel="noreferrer noopener"
+			>
+				Gayrat Muminov {" "}
+			</SourceLink >
+        					from {" "}
+			<SourceLink
+				href="https://freeicons.io/"
+				title="Flaticon"
+				target="_blank"
+				rel="noreferrer noopener"
+			>
+				www.flaticon.com
+        				</SourceLink>
+		</SourceContainer>
 
-        <div className="footer__sources">Icons made by
-        <a href="https://freeicons.io/profile/714" title="Raj Dev" className="footer__link"
-                target="_blank" rel="noreferrer noopener">Raj Dev</a>
-        from
-        <a href="https://freeicons.io/" title="Flaticon" className="footer__link"
-                target="_blank" rel="noreferrer noopener">www.flaticon.com
-        </a>
-        </div>
-    </footer>
+		<SourceContainer>
+			Icons made by {" "}
+			<SourceLink
+				href="https://freeicons.io/profile/714"
+				title="Raj Dev"
+				target="_blank"
+				rel="noreferrer noopener"
+			>
+				Raj Dev {" "}
+			</SourceLink>
+       						from {" "}
+			<SourceLink
+				href="https://freeicons.io/"
+				title="Flaticon"
+				target="_blank"
+				rel="noreferrer noopener"
+			>
+				www.flaticon.com
+        				</SourceLink>
+		</SourceContainer>
+	</FooterWrapper>
 );
 
 export default Footer;

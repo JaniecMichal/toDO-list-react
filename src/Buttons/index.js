@@ -1,34 +1,33 @@
 import React from 'react';
-import "./style.css"
+import { ButtonsContainer, Button } from "./styled";
 
 const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone, removeAll }) => (
 
-    <div className="buttonContainer">
+    <ButtonsContainer>
 
         {tasks.length > 0 && (
-            <React.Fragment>
-                <button
-                    className="button"
+            <>
+                <Button
                     disabled={tasks.every(({ done }) => done)}
                     onClick={setAllDone}
                 >
                     Oznacz wszystkie jako ukończone
-                </button>
-                <button
-                    className="button button--hideDone"
+                </Button>
+                <Button
                     onClick={toggleHideDone}
+                    hideDone
                 >
                     {hideDone ? "Pokaż wykonane zadania" : "Ukryj wykonane zadania"}
-                </button>
-                <button
-                    className="button button--allRemove"
+                </Button>
+                <Button
+                    allRemove
                     onClick={removeAll}
                 >
                     Usuń wszystkie zadania
-                </button>
-            </React.Fragment>
+                </Button>
+            </>
         )}
-    </div>
+    </ButtonsContainer>
 
 )
 

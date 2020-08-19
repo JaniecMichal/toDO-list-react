@@ -37,6 +37,7 @@ export const Button = styled.button`
         flex-flow: column;
         justify-content: flex-end;
         align-items: center;
+        margin-top: 10px;
     }
 
     ${({ hideDone }) => hideDone && css`
@@ -59,7 +60,6 @@ export const Button = styled.button`
     @media (max-width:790px) {
         flex-basis: auto;
         background-color: darkred;
-        background-image: none;
         flex-basis: auto;
         padding: 10px;
         margin-top: 10px;

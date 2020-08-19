@@ -1,19 +1,19 @@
 import React from 'react';
-import "./style.css"
+import { SectionWrapper, SectionHeader, SectionTitle } from "./styled";
 
 const Section = ({ title, body, extraContent }) => (
-    <section className="section">
+    <SectionWrapper>
 
-        <header className="section__header">
-            <h2 className="section__headerTitle">{title}</h2>
+        <SectionHeader>
+            <SectionTitle>{title}</SectionTitle>
 
-        </header>
+        </SectionHeader>
         <div>
             {extraContent}
             {body}
         </div>
 
-    </section>
+    </SectionWrapper>
 );
 
 export default Section;

@@ -14,6 +14,7 @@ const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone, removeAll }) => 
                     Oznacz wszystkie jako ukończone
                 </Button>
                 <Button
+                    disabled={!tasks.some(({done }) => done)}
                     onClick={toggleHideDone}
                     hideDone
                 >

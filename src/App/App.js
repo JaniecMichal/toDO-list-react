@@ -1,5 +1,4 @@
 import React from 'react';
-import {useLocalStorageState} from "./useLocalStorageState";
 import Form from "./Form";
 import TaskList from "./TaskList";
 import Buttons from "./Buttons";
@@ -7,57 +6,17 @@ import Section from "./Section";
 import Header from "./Header";
 import Container from "./Container";
 import Footer from "./Footer";
-
-
+import { useTasks } from "./useTasks";
+import { useHideDone } from "./useHideDone";
 
 function App() {
-  const [hideDone, setHideDone] = useLocalStorageState("hideDone", false);
-  const [tasks, setTasks] = useLocalStorageState("tasks", [ ]);
-
-  const toggleHideDone = () => {
-    setHideDone(hideDone => !hideDone);
-  };
-
-  const removeTask = (id) => {
-    setTasks(tasks => tasks.filter(task => task.id !== id));
-  };
-
-  const toggleDone = (id) => {
-    setTasks(tasks => tasks.map(task => {
-      if (task.id === id) {
-        return { ...task, done: !task.done };
-      }
-      return task;
-
-    }))
-  };
-
-  const setAllDone = () => {
-    setTasks(tasks => tasks.map(task => (
-      {
-        ...task,
-        done: true,
-      })))
-  };
-
-  const addNewTasks = (content) => {
-    if (content !== "") {
-      setTasks(tasks =>
-        [
-          ...tasks,
-          {
-            content,
-            done: false,
-            id: tasks.length === 0 ? 1 : tasks[tasks.length - 1].id + 1,
-          }
-        ])
-    };
-    return;
-  };
-
-  const removeAll = () => {
-    setTasks(tasks => [])
-  };
+  const [hideDone, toggleHideDone] = useHideDone();
+  const [tasks,
+    addNewTask,
+    toggleDone,
+    removeTask,
+    removeAll,
+    setAllDone] = useTasks();
 
   return (
     <Container>
@@ -65,7 +24,7 @@ function App() {
 
       <Section
         title="Dodaj nowe zadanie"
-        body={<Form addNewTask={addNewTasks} />} />
+        body={<Form addNewTask={addNewTask} />} />
 
       <Section
         title="Lista zadań do zrobienia"

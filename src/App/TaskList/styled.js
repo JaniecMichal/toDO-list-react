@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
-import checkedImg from "../images/checked--small.png"
-import basketImg from "../images/basket.png"
+import checkedImg from "./images/checked--small.png"
+import basketImg from "./images/basket.png"
 
 export const TaskList = styled.ul`
     padding-left: 0px;

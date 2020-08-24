@@ -12,6 +12,7 @@ Demo --> [ToDO List by {Imperator}](https://janiecmichal.github.io/toDO-list-rea
 - HTML
 - CSS
 - React.js
+- styled-components
 - customs-hooks
 - Imutabillity added to JS
 

@@ -1,7 +1,7 @@
 # Welcome to my ToDO List
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-![ToDO List by {Imperator}](https://github.com/JaniecMichal/Simply-ToDo-List/blob/master/images/OpenGraphImage.png?raw=true)
+![ToDO List by {Imperator}](https://github.com/JaniecMichal/toDO-list-react/blob/master/src/App/images/OpenGraphImage.png?raw=true)
 
 This is my first web app made during YouCode frontend course.  This app it is simply ToDO list.
 
@@ -11,8 +11,8 @@ Demo --> [ToDO List by {Imperator}](https://janiecmichal.github.io/toDO-list-rea
 
 - HTML
 - CSS
-- BEM convention
-- Vanilla.JS (ES6)
+- React.js
+- customs-hooks
 - Imutabillity added to JS
 
 ## How to use?

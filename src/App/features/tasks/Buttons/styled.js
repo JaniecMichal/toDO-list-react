@@ -40,12 +40,12 @@ export const Button = styled.button`
         margin-top: 10px;
     }
 
-    ${({ hideDone }) => hideDone && css`
+    ${({ hideDoneButton }) => hideDoneButton && css`
     &:hover{
         background-color: hsl(0, 0%, 51%);
     }`}
 
-    ${({ allRemove }) => allRemove && css`
+    ${({ allRemoveButton }) => allRemoveButton && css`
         flex-basis: auto;
         background-color: darkred;
         flex-basis: auto;

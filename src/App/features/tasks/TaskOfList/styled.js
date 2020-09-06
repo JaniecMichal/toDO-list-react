@@ -25,6 +25,10 @@ export const Item = styled.li`
         flex-flow: column;
         justify-content: center;
         align-items: center;
+
+        ${({ hidden }) => hidden && css`
+            display:none;
+        `}
     }
 `;
 
@@ -39,6 +43,7 @@ export const TaskContent = styled.p`
 
     @media (max-width:790px){
         text-align: center;
+        margin-left: 0px;
     }
 
 `;
@@ -50,7 +55,7 @@ export const SetDoneButton = styled.button`
     border: 2px solid #555;
     color: white;
     transition: background-color 0.5s;
-
+    
      &:hover{
     background-color: hsl(120, 100%, 35%);
     border-color: #222;
@@ -61,14 +66,41 @@ export const SetDoneButton = styled.button`
     }
 
     ${({ checked }) => checked && css`
-        background-image: url(${checkedImg});
-        background-position: center;
-        background-repeat: no-repeat; 
-        background-color: hsl(120, 100%, 35%);
+    background-image: url(${checkedImg});
+    background-position: center;
+    background-repeat: no-repeat;
     `}
 
     @media (max-width:790px) {
         min-width:30%;
+        text-align: center;
+
+        &:hover{
+            background-color: hsl(120, 100%, 25%);
+            border-color: #222;
+            background-image: none;
+        }
+
+        &:focus{
+            background-color: hsl(120, 100%, 25%);
+            border-color: #222;
+            background-image: none;
+        }
+
+        ${({ checked }) => checked && css`
+            background-image: url(${checkedImg});
+            background-position: center;
+            background-repeat: no-repeat; 
+            background-color: hsl(120, 100%, 35%);
+
+            &:focus{
+            background-color: hsl(120, 100%, 35%);
+            border-color: #222;
+            background-image: url(${checkedImg});
+            background-position: center;
+            background-repeat: no-repeat;
+    }
+        `}
     }
 `;
 
@@ -89,5 +121,12 @@ export const RemoveButton = styled(SetDoneButton)`
 
     @media (max-width:790px) {
         min-width:30%;
+        text-align: center;
+
+        &:hover{
+            background-color: darkred;
+            border-color: #222;
+            background-image: none;
+        }
     }
 `;

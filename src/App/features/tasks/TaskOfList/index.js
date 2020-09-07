@@ -18,9 +18,10 @@ const TaskOfList = () => {
                         checked={task.done}
                         onClick={() => dispatch(toggleDone(task.id))}
                     >
-
                     </SetDoneButton>
+
                     <TaskContent done={task.done}> {task.content}</TaskContent>
+                    
                     <RemoveButton
                         onClick={() => dispatch(removeTask(task.id))}>
                     </RemoveButton>

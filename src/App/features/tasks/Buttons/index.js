@@ -8,7 +8,6 @@ const Buttons = () => {
     const dispatch = useDispatch();
 
     return (
-
         <ButtonsContainer>
 
             {tasks.length > 0 && (

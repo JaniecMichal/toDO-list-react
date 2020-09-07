@@ -43,7 +43,12 @@ export const Button = styled.button`
     ${({ hideDoneButton }) => hideDoneButton && css`
     &:hover{
         background-color: hsl(0, 0%, 51%);
-    }`}
+    }
+    @media (max-width:500px) {
+        &:hover{
+            background-color: teal;
+        }
+    `}
 
     ${({ allRemoveButton }) => allRemoveButton && css`
         flex-basis: auto;

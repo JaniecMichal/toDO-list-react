@@ -50,6 +50,7 @@ export const AddTaskButton = styled.button`
     @media (max-width:790px){
         width: 100%;
         margin-top: 10px;
+        margin-left:0px;
 
         &:hover{
             background-color: teal;

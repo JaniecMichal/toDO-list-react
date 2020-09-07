@@ -1,5 +1,5 @@
-import React from 'react';
-import {MainWrapper} from './styled';
+import React from "react";
+import {MainWrapper} from "./styled";
 
 const Container = ({ children }) => (
     <MainWrapper>

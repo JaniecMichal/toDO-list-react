@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/toDO-list-react/static/js/main.621c95df.chunk.js",
-    "main.js.map": "/toDO-list-react/static/js/main.621c95df.chunk.js.map",
+    "main.js": "/toDO-list-react/static/js/main.fcd332b4.chunk.js",
+    "main.js.map": "/toDO-list-react/static/js/main.fcd332b4.chunk.js.map",
     "runtime-main.js": "/toDO-list-react/static/js/runtime-main.aa0dc49e.js",
     "runtime-main.js.map": "/toDO-list-react/static/js/runtime-main.aa0dc49e.js.map",
     "static/js/2.cb0ebb81.chunk.js": "/toDO-list-react/static/js/2.cb0ebb81.chunk.js",
     "static/js/2.cb0ebb81.chunk.js.map": "/toDO-list-react/static/js/2.cb0ebb81.chunk.js.map",
     "index.html": "/toDO-list-react/index.html",
-    "precache-manifest.74c3297a7d155e7d24b741ec554f1d97.js": "/toDO-list-react/precache-manifest.74c3297a7d155e7d24b741ec554f1d97.js",
+    "precache-manifest.9907aff8fd5da0351040ae3dbc919092.js": "/toDO-list-react/precache-manifest.9907aff8fd5da0351040ae3dbc919092.js",
     "service-worker.js": "/toDO-list-react/service-worker.js",
     "static/js/2.cb0ebb81.chunk.js.LICENSE.txt": "/toDO-list-react/static/js/2.cb0ebb81.chunk.js.LICENSE.txt",
     "static/media/checkerboard-cross.png": "/toDO-list-react/static/media/checkerboard-cross.9f2b8c11.png"
@@ -15,6 +15,6 @@
   "entrypoints": [
     "static/js/runtime-main.aa0dc49e.js",
     "static/js/2.cb0ebb81.chunk.js",
-    "static/js/main.621c95df.chunk.js"
+    "static/js/main.fcd332b4.chunk.js"
   ]
 }

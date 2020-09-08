@@ -33,6 +33,7 @@ export const Item = styled.li`
 `;
 
 export const TaskContent = styled.p`
+    overflow-wrap: anywhere;
     flex-basis: 78%;
     margin-left: 10px;
     font-size: 20px;

@@ -12,6 +12,9 @@ export const SectionWrapper = styled.section`
 export const SectionHeader = styled.header`
     border-bottom: 2px solid #555;
     margin-bottom: 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 `;
 
 export const SectionTitle = styled.h2`

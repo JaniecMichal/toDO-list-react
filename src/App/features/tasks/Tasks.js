@@ -1,7 +1,7 @@
 import React from 'react';
 import Form from "./Form";
 import TaskOfList from "./TaskOfList";
-import Buttons from "./Buttons";
+import ButtonsUltimateFeatures from "./ButtonsUltimateFeatures";
 import Section from "../../common/Section";
 import Header from "../../common/Header";
 import Container from "../../common/Container";
@@ -21,7 +21,7 @@ function Tasks() {
         title="Lista zadań do zrobienia"
         extraContent=
         {
-          <Buttons />}
+          <ButtonsUltimateFeatures />}
 
         body=
         {

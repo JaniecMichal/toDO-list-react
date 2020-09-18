@@ -1,9 +1,9 @@
 import React from 'react';
 import { useSelector, useDispatch } from "react-redux";
 import { selectTasks, toggleHideDone, setAllDone, removeAllTasks } from "../taskSlice";
-import { ButtonsContainer, Button } from "./styled";
+import { ButtonsContainer, Button } from "../Button";
 
-const Buttons = () => {
+const ButtonsUltimateFeatures = () => {
     const { tasks, hideDone } = useSelector(selectTasks);
     const dispatch = useDispatch();
 
@@ -39,4 +39,4 @@ const Buttons = () => {
     )
 };
 
-export default Buttons
+export default ButtonsUltimateFeatures

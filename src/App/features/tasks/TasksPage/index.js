@@ -1,17 +1,17 @@
 import React from 'react';
 import { useSelector, useDispatch } from "react-redux";
-import { fetchExampleTasks } from "./taskSlice";
-import { selectLoadingState } from "./taskSlice";
+import { fetchExampleTasks } from "../taskSlice";
+import { selectLoadingState } from "../taskSlice";
 import Form from "./Form";
 import TaskOfList from "./TaskOfList";
 import ButtonsUltimateFeatures from "./ButtonsUltimateFeatures";
-import Section from "../../common/Section";
-import Header from "../../common/Header";
-import Container from "../../common/Container";
-import Footer from "../../common/Footer";
-import { Button } from "../tasks/Button";
+import Section from "../../../common/Section";
+import Header from "../../../common/Header";
+import Container from "../../../common/Container";
+import Footer from "../../../common/Footer";
+import { Button } from "../TasksPage/Button";
 
-function Tasks() {
+function TasksPage() {
   const loading = useSelector(selectLoadingState);
   const dispatch = useDispatch();
 
@@ -48,4 +48,4 @@ function Tasks() {
   );
 }
 
-export default Tasks;
+export default TasksPage;

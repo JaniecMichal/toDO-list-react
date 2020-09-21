@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector, useDispatch } from "react-redux";
-import { selectTasks, toggleHideDone, setAllDone, removeAllTasks, selectHideDone } from "../taskSlice";
+import { selectTasks, toggleHideDone, setAllDone, removeAllTasks, selectHideDone } from "../../taskSlice";
 import { Button } from "../Button";
 import { ButtonsContainer } from "./styled";
 

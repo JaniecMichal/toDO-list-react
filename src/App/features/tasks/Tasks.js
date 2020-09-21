@@ -1,6 +1,7 @@
 import React from 'react';
-import { useDispatch } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { fetchExampleTasks } from "./taskSlice";
+import { selectLoadingState } from "./taskSlice";
 import Form from "./Form";
 import TaskOfList from "./TaskOfList";
 import ButtonsUltimateFeatures from "./ButtonsUltimateFeatures";
@@ -11,17 +12,24 @@ import Footer from "../../common/Footer";
 import { Button } from "../tasks/Button";
 
 function Tasks() {
-
+  const loading = useSelector(selectLoadingState);
   const dispatch = useDispatch();
 
   return (
     <Container>
       <Header mainTitle="React ToDO list by {Imperator}" />
-
       <Section
         title="Dodaj nowe zadanie"
         body={<Form />}
-        headerExtraContent={<Button onClick={() => dispatch(fetchExampleTasks())}>Pobierz przykładowe zadania</Button>}
+        headerExtraContent=
+        {
+          <Button
+            disabled={loading === "loading" ? "disabled" : ""}
+            onClick={() => dispatch(fetchExampleTasks())}
+          >
+            {loading === "loading" ? "Ładowanie przykładowych zadań" : "Pobierz przykładowe zadania"}
+          </Button>
+        }
       />
 
       <Section
@@ -35,7 +43,6 @@ function Tasks() {
           <TaskOfList />
         }
       />
-
       <Footer />
     </Container>
   );

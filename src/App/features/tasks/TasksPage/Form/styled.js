@@ -14,21 +14,6 @@ export const AddingTaskSection = styled.form`
     }
 `;
 
-export const NewTaskContainer = styled.input`
-    padding: 10px;
-    flex-basis: 75%;
-    flex-grow: 1;
-    border: 2px solid #555;
-
-    &:focus{
-        outline: 4px solid teal;
-    }
-
-    @media (max-width:790px){
-        width: 100%;
-    }
-`;
-
 export const AddTaskButton = styled.button`
     margin-left: 5px;
     flex-basis: 20%;

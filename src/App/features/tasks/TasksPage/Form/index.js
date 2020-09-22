@@ -2,7 +2,8 @@ import React, { useState, useRef } from 'react';
 import { useDispatch } from "react-redux";
 import { nanoid } from "@reduxjs/toolkit";
 import { addTasks } from "../../taskSlice";
-import { AddingTaskSection, NewTaskContainer, AddTaskButton } from "./styled";
+import { AddingTaskSection, AddTaskButton } from "./styled";
+import Input from '../Input';
 
 
 const Form = () => {
@@ -33,7 +34,7 @@ const Form = () => {
 
     return (
         <AddingTaskSection onSubmit={onFormSubmit}>
-            <NewTaskContainer
+            <Input
                 value={newTaskContent}
                 onChange={({ target }) => setNewTaskContent(target.value)}
                 placeholder="Wpisz zadanie do wykonania"

@@ -10,6 +10,7 @@ import Header from "../../../common/Header";
 import Container from "../../../common/Container";
 import Footer from "../../../common/Footer";
 import { Button } from "../TasksPage/Button";
+import Search from './Search';
 
 function TasksPage() {
   const loading = useSelector(selectLoadingState);
@@ -30,6 +31,11 @@ function TasksPage() {
             {loading === "loading" ? "Ładowanie przykładowych zadań" : "Pobierz przykładowe zadania"}
           </Button>
         }
+      />
+
+      <Section
+        title="Wyszukiwarka zadań"
+        body={<Search />}
       />
 
       <Section

@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import { Link } from 'react-router-dom';
 import checkedImg from "./images/checked--small.png"
 import basketImg from "./images/basket.png"
 
@@ -130,4 +131,14 @@ export const RemoveButton = styled(SetDoneButton)`
             background-image: none;
         }
     }
+`;
+
+export const StyledLink = styled(Link)`
+    color: black;
+    text-decoration:none;
+
+    &:hover{
+           text-decoration:underline;
+           color:teal;
+        }
 `;

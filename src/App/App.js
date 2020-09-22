@@ -2,6 +2,7 @@ import React from "react";
 import { HashRouter, Switch, Route, Redirect } from "react-router-dom";
 import TasksPage from "./features/tasks/TasksPage";
 import AuthorPage from "./features/tasks/AuthorPage";
+import TaskPage from "./features/tasks/TaskPage";
 import { NavWrapper, StyledNavLink, NavList, NavListItem } from "./styled";
 
 export default () => (
@@ -21,6 +22,9 @@ export default () => (
             </NavList>
         </NavWrapper>
         <Switch>
+            <Route path="/zadania/:id">
+                <TaskPage />
+            </Route>
             <Route path="/zadania">
                 <TasksPage />
             </Route>

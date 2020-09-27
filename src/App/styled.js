@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom"
 
 export const NavWrapper = styled.nav`
     max-width:100%;
-    background-color:teal;
+    background-color:${({ theme }) => theme.color.teal};
     padding:20px;
 `;
 
@@ -28,7 +28,7 @@ export const NavListItem = styled.li`
     margin-right:0px;
     `}
 
-    @media (max-width:790px){
+    @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px){
         margin-bottom:15px;
         margin-right:0px;
     }
@@ -40,18 +40,18 @@ export const StyledNavLink = styled(NavLink).attrs(() => ({
     activeClassName,
 }))`
     &.${activeClassName}{
-        color:black;
-        border:2px solid black;
+        color:${({ theme }) => theme.color.black};
+        border:2px solid ${({ theme }) => theme.color.black};
     }
 
     text-decoration:none;
-    color:white;
+    color:${({ theme }) => theme.color.white};
     font-weight:bold;
     font-size:22px;
     text-transform:uppercase;
     padding:10px;
 
     &:hover{
-        color:black;
+        color:${({ theme }) => theme.color.black};
     }
 `;

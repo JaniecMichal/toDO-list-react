@@ -6,7 +6,7 @@ export const ButtonsContainer = styled.div`
     justify-content: flex-end;
     align-items: center;
 
-    @media (max-width:790px) {
+    @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px)  {
         display: flex;
         flex-flow: column;
         justify-content: flex-end;

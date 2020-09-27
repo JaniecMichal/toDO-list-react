@@ -7,10 +7,10 @@ export default styled.input`
     border: 2px solid #555;
 
     &:focus{
-        outline: 4px solid teal;
+        outline: 4px solid  ${({ theme }) => theme.color.teal};
     }
 
-    @media (max-width:790px){
+    @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px){
         width: 100%;
     }
 `;

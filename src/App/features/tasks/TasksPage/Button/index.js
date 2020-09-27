@@ -11,11 +11,13 @@ export const Button = styled.button`
 
     &:hover{
         background-color: ${({ theme }) => theme.color.green};
+        color: ${({ theme }) => theme.color.black};
     }
 
     &:disabled{
         background-color: ${({ theme }) => theme.color.gray};
         border-color: ${({ theme }) => theme.color.gray};
+        color: ${({ theme }) => theme.color.white};
     }
 
     @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px) {

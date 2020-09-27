@@ -43,7 +43,7 @@ export const TaskContent = styled.p`
         text-decoration: line-through;
     `}
 
-    @media (max-width:790px){
+    @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px){
         text-align: center;
         margin-left: 0px;
     }
@@ -53,14 +53,14 @@ export const TaskContent = styled.p`
 export const SetDoneButton = styled.button`
     min-height: 30px;
     flex-basis: 10%;
-    background-color: hsl(120, 100%, 25%);
+    background-color: ${({ theme }) => theme.color.green};
     border: 2px solid #555;
-    color: white;
+    color: ${({ theme }) => theme.color.white};
     transition: background-color 0.5s;
     
      &:hover{
-    background-color: hsl(120, 100%, 35%);
-    border-color: #222;
+    background-color: ${({ theme }) => theme.color.lightGreen};
+    border-color: ${({ theme }) => theme.color.mineShaft};
     background-image: url(${checkedImg});
     background-position: center;
     background-repeat: no-repeat;
@@ -73,19 +73,19 @@ export const SetDoneButton = styled.button`
     background-repeat: no-repeat;
     `}
 
-    @media (max-width:790px) {
+    @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px) {
         min-width:30%;
         text-align: center;
 
         &:hover{
-            background-color: hsl(120, 100%, 25%);
-            border-color: #222;
+            background-color: ${({ theme }) => theme.color.green};
+            border-color: ${({ theme }) => theme.color.mineShaft};
             background-image: none;
         }
 
         &:focus{
-            background-color: hsl(120, 100%, 25%);
-            border-color: #222;
+            background-color: ${({ theme }) => theme.color.green};
+            border-color: ${({ theme }) => theme.color.mineShaft};
             background-image: none;
         }
 
@@ -93,11 +93,11 @@ export const SetDoneButton = styled.button`
             background-image: url(${checkedImg});
             background-position: center;
             background-repeat: no-repeat; 
-            background-color: hsl(120, 100%, 35%);
+            background-color: ${({ theme }) => theme.color.lightGreen};
 
             &:focus{
-            background-color: hsl(120, 100%, 35%);
-            border-color: #222;
+            background-color: ${({ theme }) => theme.color.lightGreen};
+            border-color: ${({ theme }) => theme.color.mineShaft};
             background-image: url(${checkedImg});
             background-position: center;
             background-repeat: no-repeat;
@@ -107,38 +107,38 @@ export const SetDoneButton = styled.button`
 `;
 
 export const RemoveButton = styled(SetDoneButton)`
-    background-color: darkred;
+    background-color: ${({ theme }) => theme.color.darkRed};
     background-image: url(${basketImg});
     background-position: center;
     background-repeat: no-repeat;
 
     &:hover{
-    background-color: hsl(0, 100%, 38%);
-    border-color: #222;
+    background-color: ${({ theme }) => theme.color.lightRed};
+    border-color: ${({ theme }) => theme.color.mineShaft};
     background-image: url(${basketImg});
     background-position: center;
     background-repeat: no-repeat;
     cursor:pointer;
     }
 
-    @media (max-width:790px) {
+    @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px) {
         min-width:30%;
         text-align: center;
 
         &:hover{
-            background-color: darkred;
-            border-color: #222;
+            background-color: ${({ theme }) => theme.color.darkRed};
+            border-color: ${({ theme }) => theme.color.mineShaft};
             background-image: none;
         }
     }
 `;
 
 export const StyledLink = styled(Link)`
-    color: black;
+    color: ${({ theme }) => theme.color.black};
     text-decoration:none;
 
     &:hover{
            text-decoration:underline;
-           color:teal;
+           color:${({ theme }) => theme.color.teal};
         }
 `;

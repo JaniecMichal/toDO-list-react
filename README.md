@@ -3,7 +3,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ![ToDO List by {Imperator}](https://github.com/JaniecMichal/toDO-list-react/blob/master/src/App/images/OpenGraphImage.png?raw=true)
 
-This is my first web app made during YouCode frontend course.  This app it is ToDO list in React.js. App state is storing in store provided by Redux. Tasks storing in localStorage for now is unavaiable.
+This is my first web app made during YouCode frontend course.  This app it is ToDO list in React.js. App state is storing in store provided by Redux. Tasks storing in localStorage.
 
 Demo --> [ToDO List by {Imperator}](https://janiecmichal.github.io/toDO-list-react/)
 
@@ -17,6 +17,8 @@ Demo --> [ToDO List by {Imperator}](https://janiecmichal.github.io/toDO-list-rea
 - Imutabillity added to JS
 - React-Redux
 - Redux-Toolkit
+- Redux-saga
+- React-Router
 
 ## How to use?
 1. Write task into text input and submit by button.

@@ -1,33 +1,40 @@
 # Welcome to my ToDO List
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ![ToDO List by {Imperator}](https://github.com/JaniecMichal/toDO-list-react/blob/master/src/App/images/OpenGraphImage.png?raw=true)
 
-This is my first web app made during YouCode frontend course.  This app it is ToDO list in React.js. App state is storing in store provided by Redux. Tasks storing in localStorage.
+This is my first SPA. For now is simply because are only a few window with content. Basic features is toDo list. In page about Author you find a few words about me. In to ToDo list you can download eample task to try list unctionalities. App use localStorage to storing your tasks. Enjoy!
+
+Ps. If you find any bugs or issues I will be grateful for any information.
 
 Demo --> [ToDO List by {Imperator}](https://janiecmichal.github.io/toDO-list-react/)
 
 ## Technologies used:
 
-- HTML
-- CSS
-- React.js
-- styled-components
-- customs-hooks
-- Imutabillity added to JS
-- React-Redux
-- Redux-Toolkit
-- Redux-saga
-- React-Router
+* HTML
+* CSS
+* React.js
+* styled-components
+* customs-hooks
+* Imutabillity added to JS
+* React-Redux
+* Redux-Toolkit
+* Redux-saga
+* React-Router
+* localStorage
 
 ## How to use?
+
 1. Write task into text input and submit by button.
 2. In ToDo List panel you see all tasks which you wrote.
 3. If any task had done then you can click green button and toggle state of task into "done".
 4. When you don't need to see done task on list you can remove them by red button.
 
 ### Live manual to app:
+
 Please see below animated gif which show how app looks and how to use my ToDO list in practise.
+
 ![Animated gif](https://raw.githubusercontent.com/JaniecMichal/Simply-ToDo-List/master/images/GifManual.gif)
 
 ## Available Scripts
@@ -54,10 +61,10 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+**Note: this is a one-way operation. Once you `eject` , you can’t go back!**
 
 If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+You don’t have to ever use `eject` . The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
